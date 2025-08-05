@@ -1,1 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Email & Password Validator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
+  <div class="container">
+    <h2>Email & Password Validator</h2>
+    <form id="loginForm">
+      <label for="email">Email:</label>
+      <input type="text" id="email" placeholder="Enter email" required />
+      <small id="emailError" style="display: none; color: red;"></small>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" placeholder="Enter password" required />
+      <small id="passwordError" style="display: none; color: red;"></small>
+
+      <button type="submit">Validate</button>
+    </form>
+
+    <div id="resultMessage"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
